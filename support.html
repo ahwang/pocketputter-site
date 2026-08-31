@@ -4,120 +4,79 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>PocketPutter Support</title>
-<style>
-  :root {
-    --bg: #F4EFE6;
-    --card: #FFFFFF;
-    --ink: #1A1A17;
-    --muted: #5C574E;
-    --accent: #1E4D3A;
-    --line: #E4DDCF;
-  }
-  * { box-sizing: border-box; }
-  html, body { margin: 0; padding: 0; }
-  body {
-    background: var(--bg);
-    color: var(--ink);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    line-height: 1.6;
-    -webkit-text-size-adjust: 100%;
-  }
-  .wrap {
-    max-width: 680px;
-    margin: 0 auto;
-    padding: 32px 20px 56px;
-  }
-  .card {
-    background: var(--card);
-    border: 1px solid var(--line);
-    border-radius: 16px;
-    padding: 28px 24px;
-  }
-  h1 {
-    font-size: 1.6rem;
-    line-height: 1.25;
-    margin: 0 0 6px;
-    color: var(--accent);
-  }
-  .eyebrow {
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    font-size: 0.72rem;
-    font-weight: 700;
-    color: var(--accent);
-    margin: 0 0 16px;
-  }
-  .lede {
-    color: var(--muted);
-    margin: 0 0 20px;
-  }
-  h2 {
-    font-size: 1.05rem;
-    margin: 26px 0 8px;
-    color: var(--ink);
-  }
-  p { margin: 0 0 12px; }
-  ol, ul { margin: 0 0 12px; padding-left: 20px; }
-  li { margin: 0 0 6px; }
-  a { color: var(--accent); }
-  .q {
-    font-weight: 700;
-    margin: 18px 0 4px;
-    color: var(--accent);
-  }
-  .foot {
-    margin-top: 24px;
-    padding-top: 16px;
-    border-top: 1px solid var(--line);
-    color: var(--muted);
-    font-size: 0.85rem;
-  }
-</style>
+<meta name="description" content="Setup guide, troubleshooting, and frequently asked questions for PocketPutter, the iPhone putting analyzer.">
+<link rel="canonical" href="https://ahwang.github.io/pocketputter-site/support.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Ccircle%20cx='16'%20cy='16'%20r='15'%20fill='%231E4D3A'/%3E%3Ccircle%20cx='16'%20cy='16'%20r='9'%20fill='none'%20stroke='%23C9E265'%20stroke-width='2'/%3E%3Ccircle%20cx='16'%20cy='16'%20r='4'%20fill='%23FFFFFF'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="wrap">
-    <div class="card">
+  <div class="wrap wrap--narrow">
+    <header class="site-header">
+      <a class="brand" href="./">
+        <svg width="28" height="28" viewBox="0 0 32 32" aria-hidden="true">
+          <circle cx="16" cy="16" r="15" fill="#1E4D3A"/>
+          <circle cx="16" cy="16" r="9" fill="none" stroke="#C9E265" stroke-width="2"/>
+          <circle cx="16" cy="16" r="4" fill="#FFFFFF"/>
+        </svg>
+        PocketPutter
+      </a>
+      <nav class="site-nav" aria-label="Site">
+        <a class="nav-link" href="./">Home</a>
+        <a class="nav-link" href="privacy.html">Privacy</a>
+      </nav>
+    </header>
+  </div>
+
+  <main class="doc-wrap">
+    <div class="doc-card">
       <p class="eyebrow">PocketPutter</p>
       <h1>Support</h1>
-      <p class="lede">PocketPutter turns your iPhone into an overhead putting analyzer &mdash; mount it above a golf ball, putt off screen, and see your face-to-path angle, ball speed, and roll-out distance.</p>
+      <p class="lede">PocketPutter turns your iPhone into an overhead putting analyzer &mdash; mount it above a golf ball, putt off screen, and see your face-to-path angle, ball speed, and roll-out distance. <a href="https://apps.apple.com/us/app/pocketputter-putting-simulator/id6767938857">Get it on the App&nbsp;Store</a>.</p>
 
       <h2>Requirements</h2>
       <ul>
         <li>iPhone 13 or later (the analysis needs the 240fps camera).</li>
         <li>iOS 16.4 or later.</li>
+        <li>A golf ball and a flat surface &mdash; carpet, mat, or green.</li>
       </ul>
 
       <h2>Quick setup</h2>
       <ol>
-        <li>Mount the phone 1.5&ndash;4 ft above the ground, camera pointing straight down, with the camera end of the phone toward you.</li>
+        <li>Mount the phone 1.5&ndash;4 ft above the ground, camera pointing straight down, with the camera end of the phone toward you. A small tripod or a table edge works.</li>
         <li>Rest a golf ball on a flat surface so it sits inside the on-screen box.</li>
         <li>Putt the ball off the screen &mdash; the app captures the stroke and shows your results.</li>
       </ol>
 
       <h2>Common questions</h2>
 
-      <p class="q">Why do I see &ldquo;Device Not Supported&rdquo; on my iPhone 12 or SE?</p>
-      <p>PocketPutter measures your stroke from 240fps slow-motion video. iPhone 12, iPhone SE, and earlier models can&rsquo;t record at 240fps, so the analysis can&rsquo;t run. An iPhone 13 or newer is required.</p>
+      <h3 class="q">Why do I see &ldquo;Device Not Supported&rdquo; on my iPhone 12 or older?</h3>
+      <p>PocketPutter measures your stroke from 240fps slow-motion video. iPhone 12 and earlier models don&rsquo;t support the sustained 240fps camera capture the analysis needs, so an iPhone 13 or newer is required.</p>
 
-      <p class="q">Why does the screen look upside-down when I hold the phone?</p>
-      <p>The app is designed to read upright when the phone is mounted overhead with the camera end toward you. When you&rsquo;re just holding it to browse or change settings, hold the phone with the charging port facing up and the screen will appear the right way around.</p>
+      <h3 class="q">Why does the screen flip upside-down when I start putting?</h3>
+      <p>In the mount, the phone hangs face-down with the camera end toward you &mdash; so the app rotates the camera screens 180&deg; to read upright from where you stand. The app launches the normal way around for browsing in hand, flips automatically when a camera view opens, and the floating rotate button in the corner flips it back any time you pick the phone up.</p>
 
-      <p class="q">The app isn&rsquo;t detecting my ball. What can I do?</p>
+      <h3 class="q">The app isn&rsquo;t detecting my ball. What can I do?</h3>
       <ul>
-        <li>Add light &mdash; even, bright lighting helps the camera find the ball.</li>
+        <li>Add light &mdash; even, bright lighting helps the camera find the ball. The torch option in Settings helps in dim rooms.</li>
         <li>Check the height &mdash; keep the phone within 1.5&ndash;4 ft of the ball so it fills enough of the frame.</li>
         <li>Use a plain surface &mdash; a solid-colored mat or carpet with good contrast against a white ball works best; busy patterns and glare make detection harder.</li>
         <li>Center the ball in the on-screen box and hold still until it locks on.</li>
       </ul>
 
-      <p class="q">Where is my data stored?</p>
-      <p>Everything stays on your phone. PocketPutter is fully offline &mdash; it collects nothing and sends nothing. See the <a href="privacy.html">Privacy Policy</a> for details.</p>
+      <h3 class="q">How do I restore a PocketPutter Pro purchase?</h3>
+      <p>Open Settings inside the app and tap <strong>Restore Purchases</strong> in the PocketPutter Pro section. Make sure you&rsquo;re signed in with the same Apple Account you originally purchased with.</p>
+
+      <h3 class="q">How do I manage or cancel my subscription?</h3>
+      <p>Subscriptions are handled by Apple. Use the <strong>Manage subscription</strong> link in the app&rsquo;s Settings, or open your App Store account settings and choose Subscriptions. Cancel at least 24 hours before the period ends to avoid renewal; the 7-day free trial converts to a paid year unless cancelled before it ends.</p>
+
+      <h3 class="q">Where is my data stored?</h3>
+      <p>Everything stays on your phone. PocketPutter is fully offline &mdash; it collects nothing and sends nothing. See the <a href="privacy.html">Privacy Policy</a> for details. You can erase all practice data any time from Settings &rarr; Data.</p>
 
       <h2>Contact</h2>
-      <p>Need help or have a suggestion? Email <a href="mailto:pocketputterapp@gmail.com">pocketputterapp@gmail.com</a>.</p>
+      <p>Need help or have a suggestion? Email <a href="mailto:pocketputterapp@gmail.com">pocketputterapp@gmail.com</a> &mdash; or use <strong>Send feedback</strong> in the app&rsquo;s Settings, which fills in your app version for you. Every message gets read.</p>
 
       <p class="foot">PocketPutter &middot; VisionTech Sports</p>
     </div>
-  </div>
+  </main>
 </body>
 </html>
