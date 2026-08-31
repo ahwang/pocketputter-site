@@ -76,6 +76,7 @@ img, svg { max-width: 100%; height: auto; }
   text-decoration: none;
 }
 .brand svg { flex: none; }
+.brand img { flex: none; display: block; border-radius: 6px; }
 .site-nav {
   display: flex;
   align-items: center;
